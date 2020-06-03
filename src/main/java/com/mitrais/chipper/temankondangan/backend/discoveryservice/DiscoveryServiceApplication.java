@@ -1,4 +1,4 @@
-package com.mitrais.chipper.backend.discoveryservice;
+package com.mitrais.chipper.temankondangan.backend.discoveryservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
