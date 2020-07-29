@@ -1,4 +1,4 @@
-package com.mitrais.chipper.temankondangan.backend.discoveryservice;
+package com.mitrais.chipper.temankondangan.be.discoveryservice;
 
 import de.codecentric.boot.admin.server.config.EnableAdminServer;
 import org.springframework.boot.SpringApplication;

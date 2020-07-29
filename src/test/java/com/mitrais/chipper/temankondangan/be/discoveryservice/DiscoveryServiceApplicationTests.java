@@ -1,4 +1,4 @@
-package com.mitrais.chipper.temankondangan.backend.discoveryservice;
+package com.mitrais.chipper.temankondangan.be.discoveryservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
