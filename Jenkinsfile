@@ -2,8 +2,8 @@ node{
     def app
     def name = "tk-be-discovery-service"
     def port = "8761"
+    def discoveryUrl = "http://localhost:8761"
     def network = "tk-be-network"
-    def eurekaServer = "http://tk-be-discovery-service:8761"
     def build = "${env.BUILD_NUMBER}"
     def version = "1"
     def imageName = "chippermitrais/$name"
@@ -48,7 +48,7 @@ node{
 
                 sshCommand remote: remote, command: "docker images $imageName -q | xargs --no-run-if-empty docker rmi -f"
 
-                sshCommand remote: remote, command: "docker run --name $name -p $port:$port --network $network -e --restart always -d $image"
+                sshCommand remote: remote, command: "docker run --name $name -p $port:$port --network $network -e DISCOVERY_URL=$discoveryUrl --restart always -d $image"
         }
     }
 }
