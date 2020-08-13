@@ -3,15 +3,12 @@ server:
 
 eureka:
   client:
-    register-with-eureka: false
-    fetch-registry: false
     registryFetchIntervalSeconds: 5
-    serviceUrl:
-      defaultZone: ${DISCOVERY_URL:http://localhost:8761}/eureka/
+    registerWithEureka: false
+  serviceUrl:
+    defaultZone: ${DISCOVERY_URL:http://localhost:8761}/eureka/
   instance:
-    hostname: localhost
-    lease-renewal-interval-in-seconds: 300
-    prefer-ip-address: true
+    leaseRenewalIntervalInSeconds: 10
 
 management:
   security:
