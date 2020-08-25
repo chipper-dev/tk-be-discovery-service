@@ -11,10 +11,10 @@ eureka:
   instance:
     leaseRenewalIntervalInSeconds: 10
 
-#management:
-#  security:
-#    enabled: false
-#spring:
-#  boot:
-#    admin:
-#      context-path: /admin
+management:
+  security:
+    enabled: false
+spring:
+  boot:
+    admin:
+      context-path: /admin
