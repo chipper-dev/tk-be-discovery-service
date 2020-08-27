@@ -2,7 +2,7 @@ node{
     def app
     def name = "tk-be-discovery-service"
     def port = "8761"
-    def discoveryUrl = "http://chippermitrais.ddns.net:8761/eureka/"
+    def discoveryUrl = "http://tk-be-discovery-service:8761/eureka/"
     def network = "tk-be-network"
     def build = "${env.BUILD_NUMBER}"
     def version = "1"
